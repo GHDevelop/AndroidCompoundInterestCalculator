@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.garrett.myapplication.CalculatorActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/PrincipalTitle"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Principal (initial investment)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/$1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="18dp"
+        android:text="$"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/Principal"
+        app:layout_constraintTop_toBottomOf="@+id/PrincipalTitle"
+        android:layout_marginStart="8dp" />
+
+    <EditText
+        android:id="@+id/Principal"
+        android:layout_width="107dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PrincipalTitle"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/InterestTitle"
+        android:layout_width="127dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Interest Rate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Principal"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/Interest"
+        android:layout_width="105dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InterestTitle"
+        android:layout_marginStart="67dp" />
+
+    <TextView
+        android:id="@+id/NumberOfCompoundsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Compounds Per Year"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Interest"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/NumberOfCompounds"
+        android:layout_width="108dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NumberOfCompoundsTitle"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginStart="67dp" />
+
+    <TextView
+        android:id="@+id/TimeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Time (Years)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NumberOfCompounds"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/Time"
+        android:layout_width="108dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TimeTitle"
+        android:layout_marginStart="67dp" />
+
+    <TextView
+        android:id="@+id/Amount"
+        android:layout_width="101dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
